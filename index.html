@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./js/ClassRecipes.js" defer></script>
+        <script src="./js/index.js" defer></script>
+        <script src="./js/navigation.js" defer></script>
+        <script src="./js/utilities.js" defer></script>
+
+        <title>Les petits plats</title>
+    </head>
+    <body>
+        <header class="logo-container">
+            <h1>
+                <a href="/"
+                    ><img
+                        src="/logo.svg"
+                        class="logo"
+                        alt="logo les petits plats"
+                /></a>
+            </h1>
+        </header>
+        <div class="container">
+            <div class="searchbox">
+                <div id="searchWrapper">
+                    <input
+                        type="text"
+                        name="searchBar"
+                        id="searchBar"
+                        placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette &nbsp; 🔍"
+                    />
+                </div>
+            </div>
+
+            <!-- <div id="typedcontent"></div> -->
+
+            <div id="message"></div>
+            <div class="clickedItems">
+                <ul id="clickedItem"></ul>
+            </div>
+            <div class="">
+                <ul id="databox"></ul>
+            </div>
+
+            <div id="searchby">
+                <div id="ingredients" class="searchbychild">
+                    <button type="button" class="collapsible">
+                        ingrédients
+                    </button>
+                    <!-- <ul class="content1" id="ul-ingredients"></ul> -->
+                    <div class="content1">
+                        <div id="content1">
+                            <input
+                                type="text"
+                                name="searchBar"
+                                class="searchBar"
+                                placeholder="&nbsp;Rechercher par ingrédient  &nbsp;🔍"
+                                style="color: #0b0375"
+                            />
+                        </div>
+                        <ul id="ul-ingredients"></ul>
+                    </div>
+                </div>
+                <div id="appareils" class="searchbychild">
+                    <button type="button" class="collapsible">appareils</button>
+                    <div class="content2">
+                        <div id="content2">
+                            <input
+                                type="text"
+                                name="searchBar"
+                                class="searchBar"
+                                placeholder="&nbsp;Rechercher par appareil  &nbsp;🔍"
+                                style="color: #863930"
+                            />
+                        </div>
+                        <ul id="ul-appareils"></ul>
+                    </div>
+                </div>
+                <div id="ustensiles" class="searchbychild">
+                    <button type="button" class="collapsible">
+                        ustensiles
+                    </button>
+                    <div class="content3">
+                        <div id="content3">
+                            <input
+                                type="text"
+                                name="searchBar"
+                                class="searchBar"
+                                placeholder="&nbsp;Rechercher par ustensile  &nbsp; &nbsp;🔍"
+                                style="color: #197844"
+                            />
+                        </div>
+                        <ul id="ul-ustensiles"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listeRecettes">
+                <ul id="listeRecettes"></ul>
+                <!-- <ul id="listeRecettes2"></ul> -->
+            </div>
+        </div>
+    </body>
+</html>
