@@ -11,7 +11,7 @@ class App {
     }
 
     async getRecipes() {
-        const url = "recipes.json"
+        const url = "/recipes.json"
         const response = await fetch(url)
         const data = await response.json()
         let resdata = data.recipes
